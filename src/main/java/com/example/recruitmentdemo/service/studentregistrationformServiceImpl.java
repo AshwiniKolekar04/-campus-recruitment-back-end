@@ -11,7 +11,7 @@ import com.example.recruitmentdemo.model.studentregistrationform;
 import com.example.recruitmentdemo.repository.studentregistrationformRepository;
 
 @Service
-public abstract class studentregistrationformServiceImpl implements studentregistrationformService {
+public  class studentregistrationformServiceImpl implements studentregistrationformService {
      
 	@Autowired
 	@Qualifier("regRepo")

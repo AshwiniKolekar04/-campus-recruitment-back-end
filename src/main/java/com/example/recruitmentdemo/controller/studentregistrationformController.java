@@ -51,7 +51,7 @@ public ResponseEntity<studentregistrationform>update(@PathVariable("id")int i,@R
 	studentregistrationform rn=rs.update(i,r);
 	return new ResponseEntity<>(rn,HttpStatus.OK);
 }
-@GetMapping("/student/{email}/{password}")
+@GetMapping("/studentregistrationfrom/{email}/{password}")
 public ResponseEntity<studentregistrationform> login(@PathVariable("email")String em,@PathVariable("password")String password)
 {
 	studentregistrationform r=rs.login(em, password);
